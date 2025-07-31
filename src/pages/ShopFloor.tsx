@@ -2,6 +2,7 @@ import { DashboardLayout } from "@/components/layout/DashboardLayout"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { EquipmentCard } from "@/components/dashboard/EquipmentCard"
 import { StatusIndicator } from "@/components/dashboard/StatusIndicator"
+import { ShopFloorBlueprint } from "@/components/dashboard/ShopFloorBlueprint"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Play, Pause, AlertTriangle, Settings, RefreshCw } from "lucide-react"
@@ -66,6 +67,8 @@ export default function ShopFloor() {
       subtitle="Real-time equipment monitoring and operator interface"
     >
       <div className="space-y-6">
+        {/* Shop Floor Blueprint */}
+        <ShopFloorBlueprint />
         {/* Quick Actions */}
         <Card>
           <CardHeader>
