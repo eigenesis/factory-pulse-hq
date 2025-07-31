@@ -96,7 +96,6 @@
   }
 
   /* Remove dark mode overrides - we're using industrial theme by default */
-}
 
 @layer base {
   * {
