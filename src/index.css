@@ -6,93 +6,144 @@
 
 @layer base {
   :root {
-    /* Industrial Dark Theme - Primary Palette */
-    --background: 210 11% 7%;
-    --foreground: 210 8% 92%;
+    /* Light Theme - Clean & Professional */
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
 
-    --card: 210 11% 9%;
-    --card-foreground: 210 8% 92%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
 
-    --popover: 210 11% 9%;
-    --popover-foreground: 210 8% 92%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
 
-    /* Brand Colors - Industrial Blue */
+    /* Brand Colors - Professional Blue */
     --primary: 210 100% 45%;
-    --primary-foreground: 210 8% 95%;
+    --primary-foreground: 210 40% 98%;
     --primary-glow: 210 100% 55%;
 
-    /* Secondary Colors - Steel Gray */
-    --secondary: 210 8% 18%;
-    --secondary-foreground: 210 8% 85%;
+    /* Secondary Colors - Light Gray */
+    --secondary: 210 40% 94%;
+    --secondary-foreground: 222.2 84% 4.9%;
 
-    --muted: 210 8% 15%;
-    --muted-foreground: 210 6% 65%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 8% 20%;
-    --accent-foreground: 210 8% 88%;
+    --accent: 210 40% 94%;
+    --accent-foreground: 222.2 84% 4.9%;
 
     /* Status Colors for Manufacturing */
-    --success: 120 60% 50%;
-    --success-foreground: 120 20% 95%;
-    --warning: 45 100% 55%;
-    --warning-foreground: 45 20% 10%;
-    --destructive: 0 75% 55%;
-    --destructive-foreground: 0 20% 95%;
+    --success: 120 60% 45%;
+    --success-foreground: 120 100% 97%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 48 96% 8%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
     --critical: 15 100% 60%;
     --critical-foreground: 15 20% 95%;
 
     /* System Colors */
-    --border: 210 8% 20%;
-    --input: 210 8% 15%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
     --ring: 210 100% 45%;
 
     /* Manufacturing Specific Colors */
-    --equipment-running: 120 60% 50%;
-    --equipment-idle: 45 100% 55%;
-    --equipment-down: 0 75% 55%;
+    --equipment-running: 120 60% 45%;
+    --equipment-idle: 38 92% 50%;
+    --equipment-down: 0 84% 60%;
     --equipment-maintenance: 270 60% 50%;
+
+    /* Sidebar Colors */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
 
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(210 100% 45%), hsl(210 100% 55%));
-    --gradient-status: linear-gradient(90deg, hsl(120 60% 50%), hsl(45 100% 55%), hsl(0 75% 55%));
-    --gradient-dark: linear-gradient(180deg, hsl(210 11% 9%), hsl(210 11% 7%));
+    --gradient-status: linear-gradient(90deg, hsl(120 60% 45%), hsl(38 92% 50%), hsl(0 84% 60%));
+    --gradient-dark: linear-gradient(180deg, hsl(210 40% 98%), hsl(210 40% 94%));
 
     /* Shadows */
-    --shadow-glow: 0 0 20px hsl(210 100% 45% / 0.3);
-    --shadow-elevated: 0 10px 30px -10px hsl(210 11% 3% / 0.5);
+    --shadow-glow: 0 0 20px hsl(210 100% 45% / 0.15);
+    --shadow-elevated: 0 4px 20px hsl(210 40% 8% / 0.1);
 
     /* Animation */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 
     --radius: 0.75rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
-  /* Sidebar Design - Industrial Theme */
-  --sidebar-background: 210 11% 8%;
-  --sidebar-foreground: 210 8% 88%;
-  --sidebar-primary: 210 100% 45%;
-  --sidebar-primary-foreground: 210 8% 95%;
-  --sidebar-accent: 210 8% 16%;
-  --sidebar-accent-foreground: 210 8% 90%;
-  --sidebar-border: 210 8% 22%;
-  --sidebar-ring: 210 100% 45%;
+  .dark {
+    /* Dark Theme - Industrial Grade */
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Brand Colors - Industrial Blue */
+    --primary: 210 100% 45%;
+    --primary-foreground: 210 40% 98%;
+    --primary-glow: 210 100% 55%;
+
+    /* Secondary Colors - Steel Gray */
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    /* Status Colors for Manufacturing */
+    --success: 120 60% 50%;
+    --success-foreground: 120 100% 97%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 48 96% 8%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --critical: 15 100% 60%;
+    --critical-foreground: 15 20% 95%;
+
+    /* System Colors */
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 210 100% 45%;
+
+    /* Manufacturing Specific Colors */
+    --equipment-running: 120 60% 50%;
+    --equipment-idle: 38 92% 50%;
+    --equipment-down: 0 84% 60%;
+    --equipment-maintenance: 270 60% 50%;
+
+    /* Sidebar Colors */
+    --sidebar-background: 222.2 84% 4.9%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 210 100% 45%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 217.2 32.6% 17.5%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217.2 32.6% 17.5%;
+    --sidebar-ring: 210 100% 45%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(210 100% 45%), hsl(210 100% 55%));
+    --gradient-status: linear-gradient(90deg, hsl(120 60% 50%), hsl(38 92% 50%), hsl(0 84% 60%));
+    --gradient-dark: linear-gradient(180deg, hsl(222.2 84% 4.9%), hsl(217.2 32.6% 17.5%));
+
+    /* Shadows */
+    --shadow-glow: 0 0 20px hsl(210 100% 45% / 0.3);
+    --shadow-elevated: 0 4px 20px hsl(222.2 84% 4.9% / 0.8);
+  }
   }
 
   /* Remove dark mode overrides - we're using industrial theme by default */
@@ -103,6 +154,50 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Typography */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold;
+  }
+
+  /* Code elements */
+  code, pre {
+    font-family: 'JetBrains Mono', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground/30 rounded-lg;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground/50;
+  }
+
+  /* Focus styles */
+  :focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+
+  /* Mobile tap highlighting */
+  * {
+    -webkit-tap-highlight-color: transparent;
   }
 }

@@ -64,15 +64,15 @@ export function AppSidebar() {
     >
       <SidebarContent className="bg-sidebar border-r border-sidebar-border">
         {/* Header */}
-        <div className="p-4 border-b border-sidebar-border">
+        <div className="p-3 md:p-4 border-b border-sidebar-border">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <Factory className="w-5 h-5 text-primary-foreground" />
+            <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center flex-shrink-0">
+              <Factory className="w-4 h-4 md:w-5 md:h-5 text-primary-foreground" />
             </div>
             {!isCollapsed && (
-              <div>
-                <h2 className="text-lg font-bold text-sidebar-foreground">MfgDash</h2>
-                <p className="text-xs text-sidebar-foreground/70">Production Control</p>
+              <div className="min-w-0 flex-1">
+                <h2 className="text-base md:text-lg font-bold text-sidebar-foreground truncate">FactoryPulse</h2>
+                <p className="text-xs text-sidebar-foreground/70 truncate">Manufacturing HQ</p>
               </div>
             )}
           </div>
@@ -89,8 +89,8 @@ export function AppSidebar() {
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
                     <NavLink to={item.url} end className={getNavCls}>
-                      <item.icon className="w-5 h-5" />
-                      {!isCollapsed && <span className="ml-3">{item.title}</span>}
+                      <item.icon className="w-4 h-4 md:w-5 md:h-5 flex-shrink-0" />
+                      {!isCollapsed && <span className="ml-2 md:ml-3 truncate">{item.title}</span>}
                     </NavLink>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
@@ -110,8 +110,8 @@ export function AppSidebar() {
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
                     <NavLink to={item.url} className={getNavCls}>
-                      <item.icon className="w-5 h-5" />
-                      {!isCollapsed && <span className="ml-3">{item.title}</span>}
+                      <item.icon className="w-4 h-4 md:w-5 md:h-5 flex-shrink-0" />
+                      {!isCollapsed && <span className="ml-2 md:ml-3 truncate">{item.title}</span>}
                     </NavLink>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
@@ -131,8 +131,8 @@ export function AppSidebar() {
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
                     <NavLink to={item.url} className={getNavCls}>
-                      <item.icon className="w-5 h-5" />
-                      {!isCollapsed && <span className="ml-3">{item.title}</span>}
+                      <item.icon className="w-4 h-4 md:w-5 md:h-5 flex-shrink-0" />
+                      {!isCollapsed && <span className="ml-2 md:ml-3 truncate">{item.title}</span>}
                     </NavLink>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
